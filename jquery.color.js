@@ -125,5 +125,9 @@
         yellow:[255,255,0],
         transparent: [255,255,255]
     };
+    
+    // Expose the color functions
+    jQuery.getRGB = jQuery.proxy(getRGB,this);
+    jQuery.getColor = jQuery.proxy(getColor,this);
 
 })(jQuery);
